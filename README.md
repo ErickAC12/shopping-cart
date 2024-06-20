@@ -1,1 +1,2 @@
-# shopping-cart
+# Shopping cart
+Shopping cart made with React
