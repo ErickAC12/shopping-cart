@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import NavBar from "./NavBar";
 import styles from './styles/shopPage.module.css';
 
 function ShopPage() {
@@ -26,26 +27,27 @@ function ShopPage() {
 
         return (
             <>
-                {elems.map((element) => {
-                    return(
-                        <Link key={element.id} to={`product/${element.id}`}>
-                            <div className={styles.gridElem}>
-                                <img src={element.image} alt="" />
-                                <h3>{element.title}</h3>
-                                <p>${element.price}</p>
-                            </div>
-                        </Link>
-                    )
-                })}
+                <NavBar />
+                <div id={styles.grid}>
+                    {elems.map((element) => {
+                        return(
+                            <Link key={element.id} to={`product/${element.id}`}>
+                                <div className={styles.gridElem}>
+                                    <img src={element.image} alt="" />
+                                    <h3>{element.title}</h3>
+                                    <p>${element.price}</p>
+                                </div>
+                            </Link>
+                        )
+                    })}
+                </div>
             </>
         )
     }
 
     return (
         <>
-            <div id={styles.grid}>
-                <ShopElements />
-            </div>
+            <ShopElements />
         </>
     );
 }

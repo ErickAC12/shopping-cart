@@ -1,0 +1,74 @@
+.navBar {
+    position: relative;
+    height: 10vh;
+    border: 2px solid black;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.navBar > a:link {
+    color: black;
+}
+
+.navBar > a:visited {
+    color: black;
+}
+
+.navBar > a:hover {
+    color: black;
+}
+
+.navBar > a:active {
+    color: black;
+}
+
+#shopText {
+    position: absolute;
+    top: -6%;
+    bottom: 0;
+    left: 2%;
+    font-size: 2rem;
+}
+
+#categoriesDiv {
+    display: flex;
+    width: 75vw;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 2rem;
+}
+
+#categoriesDiv > a:link {
+    color: black;
+}
+
+#categoriesDiv > a:visited {
+    color: black;
+}
+
+#categoriesDiv > a:hover {
+    color: black;
+}
+
+#categoriesDiv > a:active {
+    color: black;
+}
+
+#categoriesDiv > * {
+    flex: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+.cartImg {
+    position: absolute;
+    right: 1%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 70%;
+}
